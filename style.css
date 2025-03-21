@@ -1,0 +1,102 @@
+/* Resetting margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting up background image for the body */
+body {
+  background-image: url('sunset.jpg');
+  background-size: cover; /* Ensures the image covers the full viewport */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+  height: 100vh; /* Ensures the body takes up the full height of the viewport */
+  display: flex; /* Flexbox to center the container */
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+}
+
+/* Container for the app content */
+.container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 80%;
+  max-width: 600px;
+  backdrop-filter: blur(10px); /* Applies blur to the background behind the container */
+}
+
+/* Styling the main title */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Styling the search input and button container */
+.city-input {
+  margin-bottom: 20px;
+  display: flex; /* Flexbox for centering the input and button */
+  justify-content: center; /* Centers the elements horizontally */
+  gap: 10px; /* Space between input and button */
+}
+
+.city-input input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.city-input button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.city-input button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling the weather information section */
+.weather-info {
+  margin: 20px 0;
+}
+
+/* Styling the forecast section */
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast h3 {
+  margin-bottom: 10px;
+}
+
+#forecast-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Styling individual forecast cards */
+.forecast-card {
+  background-color: #f7f7f7;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-card h4 {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
